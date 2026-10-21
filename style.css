@@ -850,14 +850,15 @@ body {
 .about-aside-label, .about-aside-stamp { color: #c5a8ff; }
 .about-quote-mark { color: #9a7bdb; }
 .about-aside.about-portrait {
+  width: min(100%, 260px);
   min-height: 0;
-  margin-top: 20px;
+  margin: 24px auto 26px;
   padding: 13px;
   overflow: hidden;
   border: 1px solid rgba(197, 168, 255, .7);
   background: linear-gradient(145deg, #251940, #100d20 72%);
   box-shadow: 0 0 30px rgba(132, 91, 224, .2), 10px 12px 0 rgba(83, 59, 130, .28);
-  transform: rotate(1deg);
+  transform: none;
 }
 .about-portrait::after {
   position: absolute;
@@ -947,4 +948,69 @@ body {
   .case-state { font-size: 7px; }
   .console-top,
   .console-footer { font-size: 8px; }
+}
+
+.profile-fields strong {
+  color: #f0eaff;
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .about-layout { grid-template-columns: 1fr; gap: 24px; }
+  .about-margin-note,
+  .about-copy {
+    grid-column: 1;
+  }
+  .about-margin-note { grid-row: 1; }
+  .about-copy { grid-row: 2; }
+}
+
+@media (max-width: 480px) {
+  .profile-fields>div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 14px 12px;
+  }
+  .profile-fields span { font-size: 10px; }
+  .profile-fields strong { font-size: 16px; }
+}
+
+.about-section {
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba(99, 66, 158, .14), transparent 56%),
+    linear-gradient(115deg, rgba(40, 27, 68, .42), transparent 34%, rgba(48, 32, 78, .28)),
+    rgba(10, 7, 21, .42);
+}
+
+.about-section::before,
+.about-section::after {
+  position: absolute;
+  top: 50%;
+  width: clamp(100px, 10vw, 150px);
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  border: 1px solid rgba(197, 168, 255, .2);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(124, 232, 244, .08) 0 2px, transparent 3px),
+    radial-gradient(circle, rgba(132, 91, 224, .16), transparent 68%);
+  box-shadow:
+    0 0 0 14px rgba(197, 168, 255, .025),
+    0 0 0 30px rgba(197, 168, 255, .02),
+    0 0 55px rgba(132, 91, 224, .12);
+  content: "";
+  pointer-events: none;
+}
+
+.about-section::before { left: max(24px, calc((100vw - var(--content)) / 2 - 250px)); }
+.about-section::after { right: max(24px, calc((100vw - var(--content)) / 2 - 250px)); }
+.about-section>.section-wrap { position: relative; z-index: 1; }
+
+@media (max-width: 760px) {
+  .about-section::before,
+  .about-section::after { display: none; }
 }
