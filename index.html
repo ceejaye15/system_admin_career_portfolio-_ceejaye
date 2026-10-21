@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SysPath explores System Administrator career pathways, skills, tools, career roles, and interactive troubleshooting through a personal lab journal.">
+  <meta name="theme-color" content="#0a0715">
+  <title>SysPath — System Administrator Career Pathways</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SysPath home">
+      <span class="brand-mark">S<span>/</span></span>
+      <span class="brand-name">syspath<small>THE SYSTEM ADMIN LAB JOURNAL</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#journal">Lab journal</a>
+      <a class="nav-link" href="#troubleshooting">Interactive lab</a>
+      <a class="nav-link" href="#career-pathway">Career pathway</a>
+      <a class="nav-link" href="#skills">Skills & tools</a>
+      <a class="nav-link nav-about" href="#about">About me <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-indicator"></span> PERSONAL LEARNING JOURNAL <span class="eyebrow-date">VOL. 01 / 2026</span></p>
+        <h1 id="hero-title">Learning the systems<br>behind <span class="serif-italic">the screen.</span></h1>
+        <p class="hero-lead">SysPath is my notebook for exploring networks, operating systems, troubleshooting, security, and the infrastructure that keeps everyday work moving.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#journal">Explore my lab <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#career-pathway">View my learning path <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-signoff"><span class="signoff-rule"></span><span>Curiosity, careful notes, one system at a time.</span></div>
+      </div>
+
+      <div class="notebook-scene" aria-label="Illustration of an open system administration lab notebook and terminal">
+        <div class="scene-label scene-label-top"><span class="tiny-status"></span> LAB SESSION / 001</div>
+        <div class="notebook">
+          <div class="notebook-spine" aria-hidden="true"></div>
+          <div class="notebook-page">
+            <div class="page-topline"><span>FIELD NOTES</span><span>01 — NETWORKS</span></div>
+            <p class="page-date">A question to investigate</p>
+            <h2>What happens<br>when a system<br><em>can't connect?</em></h2>
+            <div class="page-rule"></div>
+            <p class="page-note">Observe first.<br>Test one thing at a time.<br>Write down what changed.</p>
+            <div class="page-stamp">SYS<br>PATH</div>
+          </div>
+          <div class="mini-terminal">
+            <div class="mini-terminal-bar"><span>terminal — local lab</span><span class="terminal-lights" aria-hidden="true">● ● ●</span></div>
+            <p><span>student@lab</span>:~$ ping gateway</p>
+            <p class="terminal-result">Checking a connection…</p>
+            <p><span>student@lab</span>:~$ <b>_</b></p>
+          </div>
+        </div>
+        <div class="scene-label scene-label-bottom"><span class="file-icon" aria-hidden="true">▤</span>LEARNING LOG <span>•</span> IN PROGRESS</div>
+        <span class="scene-decoration" aria-hidden="true">✳</span>
+      </div>
+      <div class="hero-footnote"><span>01</span> AN OPEN NOTEBOOK, NOT A FINISHED CHECKLIST <span class="hero-footnote-line"></span></div>
+    </section>
+
+    <section class="journal-section section-block" id="journal" aria-labelledby="journal-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">01</span> THE WORKING NOTEBOOK</p>
+            <h2 id="journal-title">Lab notebook<span class="heading-period">.</span></h2>
+          </div>
+          <p class="section-description">An honest record of topics to explore and practice. Open an entry for a little more context—these are learning goals, not claims of mastery.</p>
+        </div>
+        <div class="journal-meta"><span>CONTENTS / 06 ENTRIES</span><span><span class="tiny-status"></span> CURRENTLY LEARNING</span></div>
+        <div class="journal-list">
+          <details class="journal-entry" open>
+            <summary>
+              <span class="entry-number">01</span><span class="entry-content"><span class="entry-category">OPERATING SYSTEMS</span><strong>Linux fundamentals</strong><span class="entry-teaser">A first look at the command line and the files behind it.</span></span>
+              <span class="entry-status status-learning">Learning</span><span class="entry-open">Open entry <span aria-hidden="true">↗</span></span>
+            </summary>
+            <div class="entry-detail"><p>Explore directory navigation, file permissions, users, services, and where to look for system logs. Begin in a safe practice environment and record each command's effect.</p><span class="entry-focus">NEXT NOTE: FILES, USERS & PERMISSIONS</span></div>
+          </details>
+          <details class="journal-entry">
+            <summary>
+              <span class="entry-number">02</span><span class="entry-content"><span class="entry-category">OPERATING SYSTEMS</span><strong>Windows administration</strong><span class="entry-teaser">Understand accounts, settings, services, and event logs.</span></span>
+              <span class="entry-status status-practicing">Practicing</span><span class="entry-open">Open entry <span aria-hidden="true">↗</span></span>
+            </summary>
+            <div class="entry-detail"><p>Practice navigating system tools, reading Event Viewer, managing local users in a lab, and recognizing how updates and background services affect a computer.</p><span class="entry-focus">NEXT NOTE: SERVICES & EVENT VIEWER</span></div>
+          </details>
+          <details class="journal-entry">
+            <summary>
+              <span class="entry-number">03</span><span class="entry-content"><span class="entry-category">NETWORKING</span><strong>Network basics</strong><span class="entry-teaser">Follow an address from a device to a service.</span></span>
+              <span class="entry-status status-learning">Learning</span><span class="entry-open">Open entry <span aria-hidden="true">↗</span></span>
+            </summary>
+            <div class="entry-detail"><p>Build a mental model for IP addresses, DNS, DHCP, gateways, and ports. Compare a local connection problem with a name-resolution problem before choosing a fix.</p><span class="entry-focus">NEXT NOTE: IP, DNS & GATEWAYS</span></div>
+          </details>
+          <details class="journal-entry">
+            <summary>
+              <span class="entry-number">04</span><span class="entry-content"><span class="entry-category">ACCOUNT MANAGEMENT</span><strong>Users & permissions</strong><span class="entry-teaser">Give the right access—and no more than needed.</span></span>
+              <span class="entry-status status-explore">To explore</span><span class="entry-open">Open entry <span aria-hidden="true">↗</span></span>
+            </summary>
+            <div class="entry-detail"><p>Learn the difference between authentication and authorization, how groups simplify access management, and why least privilege is a useful default.</p><span class="entry-focus">NEXT NOTE: GROUPS & LEAST PRIVILEGE</span></div>
+          </details>
+          <details class="journal-entry">
+            <summary>
+              <span class="entry-number">05</span><span class="entry-content"><span class="entry-category">RELIABILITY</span><strong>Backup & recovery</strong><span class="entry-teaser">A backup matters when a restore has been considered.</span></span>
+              <span class="entry-status status-explore">To explore</span><span class="entry-open">Open entry <span aria-hidden="true">↗</span></span>
+            </summary>
+            <div class="entry-detail"><p>Compare backup frequency, retention, and recovery goals. A recovery plan should include how to verify a restore—not just where backup files are stored.</p><span class="entry-focus">NEXT NOTE: RESTORE TESTING</span></div>
+          </details>
+          <details class="journal-entry">
+            <summary>
+              <span class="entry-number">06</span><span class="entry-content"><span class="entry-category">OBSERVABILITY</span><strong>System monitoring</strong><span class="entry-teaser">Notice a change before it becomes an outage.</span></span>
+              <span class="entry-status status-explore">To explore</span><span class="entry-open">Open entry <span aria-hidden="true">↗</span></span>
+            </summary>
+            <div class="entry-detail"><p>Explore logs, resource metrics, alerts, and baselines. Look for useful signals while avoiding assumptions based on one number or one event.</p><span class="entry-focus">NEXT NOTE: LOGS & HEALTH SIGNALS</span></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="troubleshooting-section section-block" id="troubleshooting" aria-labelledby="troubleshooting-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">02</span> SIMULATED / NO LIVE SYSTEMS</p>
+            <h2 id="troubleshooting-title">The troubleshooting lab<span class="heading-period">.</span></h2>
+          </div>
+          <p class="section-description">Think like a junior administrator: gather clues, test the safest likely cause, and change one thing at a time. Choose a scenario to begin.</p>
+        </div>
+        <div class="lab-shell">
+          <aside class="lab-sidebar" aria-label="Choose a practice scenario">
+            <p class="lab-sidebar-label">CASE FILES <span>03</span></p>
+            <button class="scenario-button active" type="button" data-scenario="shared-folder" aria-pressed="true"><span>CASE 01</span><strong>Shared folder access</strong><span class="case-state">READY TO INVESTIGATE</span></button>
+            <button class="scenario-button" type="button" data-scenario="network-connection" aria-pressed="false"><span>CASE 02</span><strong>Network connection</strong><span class="case-state">READY TO INVESTIGATE</span></button>
+            <button class="scenario-button" type="button" data-scenario="forgotten-password" aria-pressed="false"><span>CASE 03</span><strong>Forgotten password</strong><span class="case-state">READY TO INVESTIGATE</span></button>
+            <p class="lab-disclaimer">Practice scenarios only. No accounts, devices, or services are contacted.</p>
+          </aside>
+          <div class="lab-console">
+            <div class="console-top"><span><span class="tiny-status"></span> TRAINING ENVIRONMENT</span><span id="lab-step-count">STEP 01 / 03</span></div>
+            <div class="console-body" aria-live="polite" aria-atomic="true">
+              <p class="console-kicker" id="scenario-label">CASE 01 / ACCESS & PERMISSIONS</p>
+              <h3 id="scenario-title">An employee cannot open a shared folder.</h3>
+              <p class="scenario-context" id="scenario-context">They can sign in normally, but the folder shows an “access denied” message. Other team members can open it.</p>
+              <div class="evidence-box"><span class="evidence-label">YOUR TASK</span><p id="scenario-prompt" tabindex="-1">What is the safest useful first check?</p></div>
+              <div class="choice-list" id="scenario-choices" role="group" aria-label="Troubleshooting actions"></div>
+              <p class="feedback-message" id="scenario-feedback" role="status">Choose an action to see what the evidence suggests.</p>
+              <button class="button button-secondary" id="next-step" type="button" hidden>Continue to the next check <span aria-hidden="true">→</span></button>
+              <button class="text-button" id="restart-scenario" type="button" hidden>Try this scenario again</button>
+            </div>
+            <div class="console-footer"><span>OBSERVE → TEST → RECORD</span><span>SIMULATION / NO SIDE EFFECTS</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pathway-section section-block" id="pathway" aria-labelledby="pathway-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">03</span> MY SKILL-BUILDING MAP</p>
+            <h2 id="pathway-title">A path, not a race<span class="heading-period">.</span></h2>
+          </div>
+          <p class="section-description">A suggested progression from first principles to dependable operations. Current learning topics and future goals are labeled separately.</p>
+        </div>
+        <p class="map-legend"><span class="legend-current"></span> Current learning focus <span class="legend-next"></span> Next areas to explore <span class="legend-goal"></span> Future goal</p>
+        <ol class="learning-map">
+          <li class="map-step map-current"><span class="map-node">01</span><div class="map-card"><span class="map-state">CURRENT LEARNING FOCUS</span><h3>Foundations</h3><p>Operating systems, computer hardware, files, and the basics of how a computer runs.</p><span class="map-tags">OS basics · Hardware · File systems</span></div></li>
+          <li class="map-step map-current"><span class="map-node">02</span><div class="map-card"><span class="map-state">CURRENT LEARNING FOCUS</span><h3>Connectivity</h3><p>Learn how devices communicate and where to start when a connection does not work.</p><span class="map-tags">Networking · IP addressing · DNS</span></div></li>
+          <li class="map-step map-next"><span class="map-node">03</span><div class="map-card"><span class="map-state">NEXT TO EXPLORE</span><h3>Administration</h3><p>Build toward managing accounts, permissions, updates, and system services.</p><span class="map-tags">Accounts · Permissions · Services</span></div></li>
+          <li class="map-step map-next"><span class="map-node">04</span><div class="map-card"><span class="map-state">NEXT TO EXPLORE</span><h3>Reliability</h3><p>Practice observing system health, diagnosing problems, and planning for recovery.</p><span class="map-tags">Backups · Monitoring · Troubleshooting</span></div></li>
+          <li class="map-step map-goal"><span class="map-node">05</span><div class="map-card"><span class="map-state">FUTURE GOAL</span><h3>Security</h3><p>Develop safer operational habits and understand access controls and basic hardening.</p><span class="map-tags">Access control · Patching · Hardening</span></div></li>
+        </ol>
+        <p class="map-note">This is a learning plan, not a record of completed training, qualifications, or milestones.</p>
+      </div>
+    </section>
+
+    <section class="skills-section section-block" id="skills" aria-labelledby="skills-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">04</span> A PRACTICE-LED TOOLKIT</p>
+            <h2 id="skills-title">Skills, notes & tools<span class="heading-period">.</span></h2>
+          </div>
+          <p class="section-description">Core skills develop through steady practice. These are relevant topics to build, not claims of completed qualifications.</p>
+        </div>
+        <div class="skills-and-notes">
+          <div class="skills-panel">
+            <div class="panel-label"><span>SKILLS & QUALIFICATIONS TO BUILD</span><span>06 TOPICS</span></div>
+            <ul class="skill-list">
+              <li><span>01</span><div><strong>Operating system administration</strong><p>Manage users, updates, services, and logs to keep computers stable and available.</p></div></li>
+              <li><span>02</span><div><strong>Networking fundamentals</strong><p>Understand IP, DNS, DHCP, and connectivity to locate where communication is failing.</p></div></li>
+              <li><span>03</span><div><strong>Account & access management</strong><p>Apply groups and least privilege so people can access what their work requires.</p></div></li>
+              <li><span>04</span><div><strong>Troubleshooting & monitoring</strong><p>Use evidence and system signals to identify causes and verify a fix worked.</p></div></li>
+              <li><span>05</span><div><strong>Backup, recovery & documentation</strong><p>Help protect information, restore services, and make operational work repeatable.</p></div></li>
+              <li><span>06</span><div><strong>Security & professional practice</strong><p>Reduce risk through careful patching, responsible access, and clear communication.</p></div></li>
+            </ul>
+            <p class="qualification-note"><span aria-hidden="true">✳</span> Future qualification ideas: foundational IT or networking coursework and supervised lab practice. No certification is claimed here.</p>
+          </div>
+          <aside class="notes-panel" id="notes" aria-labelledby="notes-title">
+            <div class="notes-topline"><span class="notes-tab">QUICK REFERENCE</span><span>NOTEBOOK / A</span></div>
+            <h3 id="notes-title">System notes</h3>
+            <p class="notes-intro">Small reminders for the next time a problem shows up.</p>
+            <details class="note-item">
+              <summary><code>ipconfig</code><span>Check network settings <b aria-hidden="true">+</b></span></summary>
+              <p>On Windows, displays IP configuration such as addresses, gateways, and DNS information. Other systems use different commands, such as <code>ip addr</code> on Linux.</p>
+            </details>
+            <details class="note-item">
+              <summary><code>ping</code><span>Test reachability <b aria-hidden="true">+</b></span></summary>
+              <p>Sends test packets to check whether a destination responds. A failed ping alone does not prove a host is offline; firewalls and network policy may block it.</p>
+            </details>
+            <details class="note-item">
+              <summary><code>whoami</code><span>Confirm the current account <b aria-hidden="true">+</b></span></summary>
+              <p>Shows the current user identity in many command-line environments. Exact availability and output vary by operating system and shell.</p>
+            </details>
+            <div class="notes-reminder"><span class="tiny-status"></span> Read the output before changing anything.</div>
+          </aside>
+        </div>
+        <div class="tools-strip" aria-labelledby="tools-title">
+          <div class="tools-heading"><p class="eyebrow">REQUIRED SKILLS & TOOLS</p><h3 id="tools-title">A few useful workbench staples</h3></div>
+          <article class="tool-item"><span class="tool-index">01 / OS</span><strong>Linux & Windows</strong><p>Practice operating system basics and routine administration in a lab.</p></article>
+          <article class="tool-item"><span class="tool-index">02 / SHELL</span><strong>PowerShell & Bash</strong><p>Explore command-line tools and repeatable task workflows.</p></article>
+          <article class="tool-item"><span class="tool-index">03 / LAB</span><strong>Virtual machines</strong><p>Test configurations in an isolated practice environment.</p></article>
+          <article class="tool-item"><span class="tool-index">04 / NETWORK</span><strong>Wireshark</strong><p>Study network protocols using traffic from an authorized lab.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="career-section section-block" id="career" aria-labelledby="career-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">05</span> CAREER DIRECTION</p>
+            <h2 id="career-title">Where this curiosity can lead<span class="heading-period">.</span></h2>
+          </div>
+          <p class="section-description">Role names and duties vary by employer. These are career possibilities—not experience or positions I claim to hold.</p>
+        </div>
+        <div class="career-possibilities">
+          <article class="career-entry"><span class="career-label">A GOOD PLACE TO BEGIN</span><h3>IT Support Specialist</h3><p>Helps people solve everyday device, software, and access issues while documenting solutions.</p><div class="career-responsibilities"><span>Typical responsibilities</span><ul><li>Triage support requests and troubleshoot user issues.</li><li>Set up devices, document outcomes, and escalate when needed.</li></ul></div><div class="career-skills"><span>Relevant skills</span><p>Communication · Ticketing · OS basics · Troubleshooting</p></div></article>
+          <article class="career-entry"><span class="career-label">A NETWORKING FOCUS</span><h3>Network Support Technician</h3><p>Assists with connectivity issues, network equipment, and first-line network monitoring.</p><div class="career-responsibilities"><span>Typical responsibilities</span><ul><li>Check connection status and gather network diagnostics.</li><li>Assist with equipment monitoring and record recurring issues.</li></ul></div><div class="career-skills"><span>Relevant skills</span><p>IP addressing · DNS · Connectivity checks · Documentation</p></div></article>
+          <article class="career-entry"><span class="career-label">SYSTEMS & SERVICES</span><h3>Junior System Administrator</h3><p>Supports accounts, system updates, services, backups, and routine infrastructure operations.</p><div class="career-responsibilities"><span>Typical responsibilities</span><ul><li>Maintain user access, system updates, and services.</li><li>Review system alerts and assist with backup checks.</li></ul></div><div class="career-skills"><span>Relevant skills</span><p>Linux / Windows · Permissions · Monitoring · Scripting</p></div></article>
+          <article class="career-entry"><span class="career-label">A FUTURE SPECIALTY</span><h3>Systems Engineer</h3><p>Helps design, automate, and improve infrastructure for availability and future growth.</p><div class="career-responsibilities"><span>Typical responsibilities</span><ul><li>Design and improve infrastructure and repeatable workflows.</li><li>Plan for service reliability, recovery, and capacity.</li></ul></div><div class="career-skills"><span>Relevant skills</span><p>Architecture · Automation · Reliability · Security basics</p></div></article>
+        </div>
+        <p class="career-footnote">Career possibilities are illustrative. Actual responsibilities depend on the organization, team, and level of the role.</p>
+      </div>
+    </section>
+
+    <section class="pathway-requirement section-block" id="career-pathway" aria-labelledby="career-pathway-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-index">06</span> ACADEMIC REQUIREMENT / CAREER PATHWAY</p>
+            <h2 id="career-pathway-title">From first response to resilient systems<span class="heading-period">.</span></h2>
+          </div>
+          <p class="section-description">A common progression has multiple routes. Each level below describes typical work and skills to develop, not a promise of promotion.</p>
+        </div>
+        <div class="level-list">
+          <article class="level-entry"><span class="level-number">LEVEL 01</span><div class="level-title"><h3>IT Support / Help Desk</h3><p>Entry level · User-facing support</p></div><p class="level-description">Provides a first point of contact for everyday hardware, software, account, and connectivity problems.</p><div class="level-responsibilities"><span>RESPONSIBILITIES</span><ul><li>Respond to support requests and clarify symptoms.</li><li>Set up devices and assist with basic account access.</li><li>Document fixes and escalate issues when needed.</li></ul></div><div class="level-skills"><span>SKILLS TO DEVELOP</span><p>Customer service · OS basics · Troubleshooting · Ticket documentation</p></div></article>
+          <article class="level-entry"><span class="level-number">LEVEL 02</span><div class="level-title"><h3>Junior System Administrator</h3><p>Developing · System operations</p></div><p class="level-description">Helps maintain the servers, user accounts, and shared services a team relies on.</p><div class="level-responsibilities"><span>RESPONSIBILITIES</span><ul><li>Manage users, groups, permissions, and routine updates.</li><li>Check system health, logs, and scheduled backups.</li><li>Investigate incidents and record configuration changes.</li></ul></div><div class="level-skills"><span>SKILLS TO DEVELOP</span><p>Linux / Windows · Networking · Access control · Backup fundamentals</p></div></article>
+          <article class="level-entry"><span class="level-number">LEVEL 03</span><div class="level-title"><h3>Senior SysAdmin / Systems Engineer</h3><p>Advanced · Design & reliability</p></div><p class="level-description">Designs and improves infrastructure with attention to reliability, security, and scale.</p><div class="level-responsibilities"><span>RESPONSIBILITIES</span><ul><li>Plan and improve server or cloud infrastructure.</li><li>Automate repeatable operational tasks and recovery plans.</li><li>Lead complex incident response and share technical guidance.</li></ul></div><div class="level-skills"><span>SKILLS TO DEVELOP</span><p>Automation · Architecture · Resilience · Risk management</p></div></article>
+        </div>
+        <p class="pathway-footnote">Illustrative career levels only: role scope and prerequisites vary between organizations.</p>
+      </div>
+    </section>
+
+    <section class="about-section section-block" id="about" aria-labelledby="about-title">
+      <div class="section-wrap about-layout">
+        <div class="about-margin-note"><span>PERSONAL ENTRY</span><span>AUTHOR / EDITABLE</span><span>FILE NO. CJ-01</span></div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="section-index">07</span> ABOUT THE CREATOR</p>
+          <h2 id="about-title">A student, a notebook,<br>and a lot to <span class="serif-italic">discover.</span></h2>
+          <p class="about-intro">I’m a female Information Technology student interested in how operating systems, networks, and people connect behind the scenes. SysPath is where I can organize what I’m learning and reflect on the kind of system administrator I hope to become.</p>
+          <div class="profile-fields">
+            <!-- Edit these profile fields with your real details before publishing. -->
+            <div><span>NAME</span><strong>Chatlyn Jaye T. Acedera</strong></div>
+            <div><span>COURSE / PROGRAM</span><strong>Bachelor of Science in Information Technology (BSIT)</strong></div>
+            <div><span>PREFERRED IT CAREER</span><strong>System Administration & IT Infrastructure</strong></div>
+            <div><span>PROFESSIONAL GOAL</span><strong>Build practical skills in networks, operating systems, security, and automation.</strong></div>
+          </div>
+        
+          <a class="text-link about-link" href="#journal">Return to the notebook <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-aside about-portrait">
+          <div class="about-aside-label">ABOUT THE AUTHOR / 2026</div>
+          <img class="about-portrait-image" src="images/ceejaye.jpg" alt="Portrait of Chatlyn Jaye T. Acedera" loading="lazy" decoding="async">
+          <p class="about-portrait-caption">Chatlyn Jaye T. Acedera<span>IT STUDENT / SYSTEMS ADMINISTRATION</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title">
+      <div class="section-wrap closing-inner">
+        <p class="eyebrow"><span class="status-indicator"></span> END OF ENTRY / BEGINNING OF PRACTICE</p>
+        <h2 id="closing-title">Every system has a story.<br><span class="serif-italic">I’m learning how to understand it.</span></h2>
+        <a class="button button-primary" href="#about">Visit the creator's page <span aria-hidden="true">↗</span></a>
+        <a class="back-top" href="#home">Back to the top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-wrap footer-inner">
+      <a class="footer-brand" href="#home">SYSPATH <span>/ LAB JOURNAL</span></a>
+      <p>A personal learning portfolio · HTML, CSS & JavaScript</p>
+      <span>© <span id="year">2026</span> · LEARN / TEST / TAKE NOTES</span>
+    </div>
+  </footer>
+</body>
+</html>
